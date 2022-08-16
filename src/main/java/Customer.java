@@ -52,8 +52,8 @@ public class Customer {
         return "This customer's full name is " + this.firstName + " " + this.lastName + ".";
     }
 
-    void subtractHeldMoney() {
-        this.heldMoney = 0;
+    void subtractHeldMoney(int amountToSubtract) {
+        this.heldMoney = heldMoney - amountToSubtract;
     }
 
     void addPurchase(String newPurchase) {
